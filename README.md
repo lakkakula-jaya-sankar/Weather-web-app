@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+## 🌤️ Weather Web App – React + Open Meteo API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##📌 Overview
 
-## Available Scripts
+The Weather Web App is a responsive React-based application that allows users to search for any city and get real-time weather data, including current conditions and short-term forecasts. It integrates with the Open-Meteo API and Open-Meteo Geocoding API to fetch accurate, location-specific weather information.
 
-In the project directory, you can run:
+##🚀 Features
 
-### `npm start`
+🔍 City-based Weather Search: Users can enter a city name to retrieve weather data via the Open-Meteo Geocoding API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📍 Geolocation Conversion: Converts city names into latitude and longitude coordinates for precise weather lookup.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🌡️ Current Weather Display:
 
-### `npm test`
+Temperature (°C)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Wind speed and direction
 
-### `npm run build`
+Altitude
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Time and date
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Day/Night indicator
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Weather icons based on conditions (e.g., sun, rain, clouds)
 
-### `npm run eject`
+📅 Forecast Cards: Shows a 4-day forecast with min/max temperature and day name.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🎨 Clean and Visual UI: Uses meaningful weather icons and layout for improved user experience.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Frontend: React.js, JSX, CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Data Handling: Axios for HTTP requests
 
-## Learn More
+APIs Used:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open-Meteo Weather API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Open-Meteo Geocoding API
 
-### Code Splitting
+##⚙️ How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+User enters a city name.
 
-### Analyzing the Bundle Size
+App sends request to the Open-Meteo Geocoding API to get latitude and longitude.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Then it fetches weather data for those coordinates using the Weather Forecast API.
 
-### Making a Progressive Web App
+Parsed data includes temperature, wind, date/time, and forecast.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Based on the weathercode, relevant icons are dynamically loaded.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Forecast cards are rendered using a separate Card component.
