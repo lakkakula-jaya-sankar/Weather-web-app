@@ -1,10 +1,10 @@
 ## 🌤️ Weather Web App – React + Open Meteo API
 
-##📌 Overview
+## 📌 Overview
 
 The Weather Web App is a responsive React-based application that allows users to search for any city and get real-time weather data, including current conditions and short-term forecasts. It integrates with the Open-Meteo API and Open-Meteo Geocoding API to fetch accurate, location-specific weather information.
 
-##🚀 Features
+## 🚀 Features
 
 🔍 City-based Weather Search: Users can enter a city name to retrieve weather data via the Open-Meteo Geocoding API.
 
@@ -28,7 +28,7 @@ Weather icons based on conditions (e.g., sun, rain, clouds)
 
 🎨 Clean and Visual UI: Uses meaningful weather icons and layout for improved user experience.
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Frontend: React.js, JSX, CSS
 
@@ -40,7 +40,7 @@ Open-Meteo Weather API
 
 Open-Meteo Geocoding API
 
-##⚙️ How It Works
+## ⚙️ How It Works
 
 User enters a city name.
 
